@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media(min-width:320px) and (max-width:450px){
+    body{
+        background-image: url(../images/wp2550002-wallpaper-ironman.png);
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-rows: 20% 70% 10% ;
+        height: 110vh;
+    }
+    *{
+          /* border: 2px solid red;  */
+    }
+    h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+    span{
+        color: red;
+    }
+    .logo{
+        font-size: 30px;
+        color: blue;
+    }
+    .content{
+        margin-top: -10px;
+       
+       
+        
+    }
+    article{
+        background-color: grey;
+    }
+    .dc{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3 1fr);
+        margin: 10px;
+        gap: 10px;
+        padding: 10px;
+        
+    }
+    #av{
+        grid-column: span 2;
+        height: 30px;
+    }
+    .av{
+       
+        padding: 10px;
+        border-radius: 10px;
+        height:  80px;
+        overflow-y: scroll; 
+    }
+    footer{
+        background-color: grey;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    footer img{
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
+    footer ul{
+        display: flex;
+        list-style: none;
+    }
+    footer a{
+        padding: 10px;
+    }
+    
+   
+}
+@media(min-width:426px) and (max-width:2560px){
+    body{
+        background-color: black;
+        color: blue;
+        display: grid;
+        grid-template-rows: 10vh 100vh 20vh;
+       
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid red;    */
+    }
+    span{
+        color: red;
+       
+    }
+    h1{
+        text-align: center;
+        margin: 10px;
+    }
+    .content{
+        margin: 20px;
+        width: 50%;
+        margin: 40px auto;
+    }
+    .info{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-gap: 10%;
+        
+    }
+    .av{
+        margin: 30px;
+        border: 2px solid blue;
+        padding: 10px;
+        border-radius: 10px;
+        height: 70px;
+        overflow-y: scroll;
+    }
+    #av{
+        grid-column: span 2;
+    }
+
+    footer{
+        background-color: white;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    ul img{
+        width: 50px;
+        height: 50px;
+    }
+    ul li:hover{
+        background-color: black;
+
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        list-style: none;
+        padding: 25px;
+    }
+    ul a{
+       text-decoration: none;
+       margin-bottom: 5px;
+       transition: ease-in-out;
+    }
+    ul a:hover{
+        color: white;
+        border-bottom: 2px solid blue;
+    }
+}

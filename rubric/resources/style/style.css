@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: blue;
+}
+span{
+    color: red;
+}
+h2{
+    color: blue;
+    margin-bottom: 5px;
+}
+h3{
+    margin-bottom: 5px;
+}
+@media(max-width:425px) and (min-width:320px){
+    body{
+       
+        /* border: 1px solid red; */
+       
+    }
+    a{
+        font-size: 16px;
+        
+        text-decoration: none;
+        color: blue;
+        transition: ease-in-out;
+    }
+    
+    a:hover{
+        color: yellow;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        background-color: lightgray;
+
+    }
+    .p{
+        position: absolute;
+        margin-left: 200px;
+       
+
+    }
+    
+    .nav{
+        
+       
+        width: 100%;
+        height: 20px;
+        padding: 5px;
+    }
+    .content{
+        margin: 10px;
+        margin-top: 50px
+    }
+    .one {
+        
+        
+        min-width: 310px;
+        max-width: 422px;
+        height: 50vh;
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px
+    
+    }
+    .two{
+       
+        min-width: 310px;
+        max-width: 422px;
+        height: 50vh;
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    .three{
+       
+        min-width: 310px;
+        max-width: 422px;
+        height: 50vh;
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    .txt{
+        transition: ease-in-out;
+    }
+    .txt:hover{
+        font-size: 50px;
+    }
+    body{
+        background-image: url(../images/wp2550002-wallpaper-ironman.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .footer{
+        background-color: gray;
+        width: 100%;
+        height: 20px;
+    }
+}
+/*forlaptops*/
+@media(min-width:426px) and (max-width:2560px){
+    *{
+           /* border: 1px solid red;    */
+         
+    }
+   h1{
+    border: 2px solid blue;
+   }
+    .main{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 90vh 10vh;
+       
+        
+    }
+    body{
+        background-color: black;
+    }
+    .footer{
+        grid-column: span 2;
+        width: 2560px;
+    }
+    .blog{
+        margin: 10px;
+        padding: 5px;
+       
+       
+    }
+    ul{
+        margin-top: 30px;
+    }
+    li{
+        padding: 20px;
+    }
+    .nav{
+        border-right: 2px solid blue;
+       
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        font-family: 'Poppins';
+        font-size: 18px;
+        position: relative;
+        transition: ease-in-out;
+        transition: .5s;
+
+
+        
+    }
+    a:after{
+        content: "";
+        position: absolute;
+        background-color: red;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+
+    }
+    a:hover:after{
+        width: 100%;
+       
+    }
+    a:hover{
+        color: white;
+        font-size: 25px;
+    }
+    ul{
+        list-style: none;
+    }
+    .op{
+        margin: 10px;
+        border: 1px solid blue;
+        text-align: center;
+        border-radius: 10px;
+        
+
+    }
+    body{
+       
+    }
+    .op:hover{
+        background-color: blue;
+        color: white;
+        overflow: hidden;
+        
+    }
+    .p:hover{
+        color: white;
+    }
+    .content{
+        display: grid;
+       grid-template-columns: 33.3% 33.3% 33.3%;
+       margin-top: 200px;
+       margin-bottom: 50px;
+    }
+    .one{
+        margin: 0 30px;
+        padding: 10px;
+        background-color: grey;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+        
+    }
+    .footer{
+        background-color: lightslategray;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 10px;
+        border: 2px solid blue;
+        width: 100%;
+    }
+    .txt{
+        margin: 1px;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        min-width: 200px;
+        max-width: 460px;
+        max-height: 460px;
+        min-height: 200px;
+        background-color: grey;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 10px auto;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+      
+    }
+    .card span{
+        height: 100%;
+        left: 0;
+        background: url(../images/OIP.jpg) ;
+        position: absolute;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+        
+       
+    }
+    .card span:nth-child(1){
+        z-index: 10;
+        width: 25%;
+        transition-delay: 0;
+    }
+    .card span:nth-child(2){
+        z-index: 10;
+        width: 50%;
+        transition-delay: 0.3s;
+    }
+    .card span:nth-child(3){
+        z-index: 10;
+        width: 75%;
+        transition-delay: 0.6s;
+    }
+    .card span:nth-child(4){
+        z-index: 10;
+        width: 100%;
+        transition-delay: 0.8s;
+    }
+    .card:hover span{
+        transform: translateY(-100%);
+        transition: 1s;
+        
+    }
+    .card:hover span:nth-child(1){
+        transition-delay: 0.8s;
+    }
+    .card:hover span:nth-child(2){
+        transition-delay: 0.6s;
+    }
+    .card:hover span:nth-child(3){
+        transition-delay: 0.3s;
+    }
+    .card:hover span:nth-child(4){
+        transition-delay: 0.s;
+    }
+    --------------------------------------------------
+    
+    
+}
+/*for android 2page*/
+@media(min-width:320px) and (max-width:450px){
+
+}
